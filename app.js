@@ -1,10 +1,106 @@
-const title = document.querySelector(".hello h1");	//class="hello"
-//querySelector("#hello"); -> id="hello"
-// querySelector -> returns the first element
-// querySelectorAll -> returns every elements by Array
-console.log(title);
-title.innerText = "Hello";
-title.style.color = "blue";
+/******** 3.8 ********/
+​
+const h1 = document.querySelector("div.hello:first-child h1");
+​
+function handleTitleClick() {
+	const clickedClass = "clicked";
+	if (h1.classList.contains(clickedClass))
+		h1.classList.remove(clickedClass);
+	else
+		h1.classList.add(clickedClass);
+}
+// toggle() -> doing the same thing
+​
+function handleTitleClick() {
+	h1.classList.toggle("clicked");
+}
+​
+h1.addEventListener("click", handleTitleClick);
+
+/* *********************************** */
+
+// /******** 3.7 ********/
+// const h1 = document.querySelector("div.hello:first-child h1");
+// ​
+// function handleTitleClick() {
+// 	const clickedClass = "clicked";
+// 	if (h1.className === clickedClass)
+// 		h1.className = "";
+// 	else
+// 		h1.className = clickedClass ;
+// }
+// ​
+// h1.addEventListener("click", handleTitleClick);
+
+/* *********************************** */
+
+// const h1 = document.querySelector("div.hello:first-child h1");
+// ​
+// function handleTitleClick() {
+// 	const currentColor = h1.style.color;
+// 	let = newColor;
+// 	if (currentColor === "blue")
+// 		newColor = "tomato";
+// 	else
+// 		newColor = "blue";
+// 	h1.style.color = newColor;
+// }
+// ​
+// h1.addEventListener("click", handleTitleClick);
+
+/* *********************************** */
+
+// const h1 = document.querySelector("div.hello:first-child h1");
+
+// function handleTitleClick() {
+// 	// console.log("title was clicked!");
+// 	h1.style.color = "blue";
+// }
+
+// function handleMouseEnter() {
+// 	// console.log("mouse is here");
+// 	h1.innerText = "Mouse is here!";
+// }
+
+// function handleMouseLeave() {
+// 	h1.innerText = "Mouse is gone!";
+// }
+
+// h1.onclick = handleTitleClick;
+// // h1.addEventListener("click", handleTitleClick);
+// h1.addEventListener("mouseenter", handleMouseEnter);
+// h1.addEventListener("mouseleave", handleMouseLeave);
+
+// function handleWindowResize() {
+// 	document.body.style.backgroundColor = "tomato";
+// }
+
+// function handleWindowCopy() {
+// 	alert("copier!");
+// }
+// ​
+// function handleWindowOffline() {
+//     alert("SOS no WIFI");
+// }
+// ​
+// function handleWindowOnline() {
+//     alert("ALL GOOD");
+// }
+// ​
+// window.addEventListener("resize", handleWindowResize);
+// window.addEventListener("copy", handleWindowCopy);
+// window.addEventListener("offline", handleWindowOffline);
+// window.addEventListener("online", handleWindowOnline);
+
+/* *********************************** */
+
+// const title = document.querySelector(".hello h1");	//class="hello"
+// //querySelector("#hello"); -> id="hello"
+// // querySelector -> returns the first element
+// // querySelectorAll -> returns every elements by Array
+// console.log(title);
+// title.innerText = "Hello";
+// title.style.color = "blue";
 
 /* *********************************** */
 
