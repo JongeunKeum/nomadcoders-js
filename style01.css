@@ -1,8 +1,11 @@
+
+/************ #3 ************/
+
 body {
 	background-color: beige;
 }
 
-/******** 3.7 ********/
+/************ 3.7 ************/
 h1 {
 	color: cornflowerblue;
 	transition: color 0.5s ease-in-out;
@@ -12,7 +15,7 @@ h1 {
 	color: tomato;
 }
 
-/******** 3.8 ********/
+/************ 3.8 ************/
 h1 {
 	color: cornflowerblue;
 	transition: color 0.5s ease-in-out;
@@ -21,6 +24,7 @@ h1 {
 .clicked {
 	color: tomato;
 }
-/* ​
-.sexy-font {
-} */
+​
+/* .sexy-font {
+}
+*/
