@@ -4,10 +4,10 @@ const todoList = document.getElementById("todo-list");
 
 const TODOS_KEY = "todos";
 
-const todos = [];
+let todos = [];
 
 function saveToDos() {
-	localStorage.setItem(TODOS_KEY, todos);
+	localStorage.setItem(TODOS_KEY, JSON.stringify(todos));
 }
 
 function deleteToDo(event) {
@@ -46,6 +46,8 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
 
 if (savedToDos !== null) {
 	const parsedToDos = JSON.parse(savedToDos);
-	parsedToDos.forEach(sayHello);
+	// parsedToDos.forEach(sayHello);
 	// the same : parsedToDos.forEach((item) => console.log("hello", item));
+	todos = parsedToDos;
+	parsedToDos.forEach(paintToDo);
 }
